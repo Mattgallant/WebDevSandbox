@@ -1,0 +1,54 @@
+<!--CSS Grid Layout Crash Course Practice-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Grids</title>
+        <style>
+            .wrapper {
+                display: grid;
+                grid-template-columns: 70% 30%;
+                /*
+                grid-column-gap: 1em;
+                grid-row-gap: 1em;
+                */
+                grid-gap: 1em;
+            }
+
+            .wrapper > div {
+                background: #eee;
+                padding: 1em;
+            }
+            .wrapper > div:nth-child(odd) {
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis ratione molestias dignissimos nihil voluptas, a omnis
+                soluta vitae architecto, beatae ad. Modi minus ab ipsa veritatis
+                esse quos earum blanditiis provident architecto distinctio! Eos
+                ut deserunt laudantium obcaecati labore cumque!
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                dolorem incidunt laudantium repellat commodi quasi delectus
+                libero voluptatibus tempora! Illo!
+            </div>
+            <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis ratione molestias dignissimos nihil voluptas, a omnis
+                soluta vitae architecto, beatae ad. Modi minus ab ipsa veritatis
+                esse quos earum blanditiis provident architecto distinctio! Eos
+                ut deserunt laudantium obcaecati labore cumque!
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                dolorem incidunt laudantium repellat commodi quasi delectus
+                libero voluptatibus tempora! Illo!
+            </div>
+        </div>
+    </body>
+</html>

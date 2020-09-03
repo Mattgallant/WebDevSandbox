@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Flexbox</title>
+    </head>
+    <style>
+        .container-1 {
+            display: flex;
+            /* align-items: flex-end; */
+            align-items: stretch;
+        }
+
+        .container-1 div {
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 1;
+            order: 2;
+        }
+
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 2;
+            order: 3;
+        }
+    </style>
+    <body>
+        <div class="container-1">
+            <div class="box-1">
+                <h3>Box 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    debitis.
+                </p>
+            </div>
+            <div class="box-2">
+                <h3>Box 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    debitis.
+                </p>
+            </div>
+            <div class="box-3">
+                <h3>Box 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                    debitis.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
