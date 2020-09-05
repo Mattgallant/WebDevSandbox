@@ -1,11 +1,23 @@
-GET https://jsonplaceholder.typicode.com/posts
+GET http://localhost:5000/api/members
 
 ###
 
-POST https://jsonplaceholder.typicode.com/posts
+POST http://localhost:5000/api/members
 Content-Type: application/json
 
 {
-    "title": "My Post",
-    "body": "This is my post"
+    "name": "Bob Smith",
+    "email": "jake@gmail.com"
+}
+
+###
+
+get http://localhost:5000/api/members/1
+
+###
+put http://localhost:5000/api/members/1
+Content-Type: application/json
+
+{
+    "email": "john@yahoo.com"
 }
