@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Home from "./components/Home";
+import Todos from "./components/Todos";
 
 import "./App.css";
 
@@ -17,13 +18,14 @@ function App() {
             <div className="background">
                 <div className="wrapper">
                     <Navbar />
+                    <Route exact path="/" component={Home} />
                     <Route
                         exact
-                        path="/"
+                        path="/todo"
                         render={(props) => (
-                            <React.Fragment>
-                                <Home />
-                            </React.Fragment>
+                            <div className="mt-5 mx-5">
+                                <Todos />
+                            </div>
                         )}
                     />
                 </div>
